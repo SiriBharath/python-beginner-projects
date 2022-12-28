@@ -1,0 +1,76 @@
+def guess_number(x:int):
+
+    import random
+
+    print("Welocme to number guessing game")
+
+#print(answer)
+
+    exit=None
+
+    name=input("Enter your name: ")
+
+    while True:
+
+        answer=random.randint(1,x)
+
+        print("Enter how many number of guesses you want to guess the number")
+
+        guesses=int(input("> "))
+
+        while guesses>=1:
+
+            print(f"Guess the number from 1 to {x}: ")
+
+            user_input=int(input("> "))
+
+            if user_input==answer:
+
+                print("Congratulations")
+
+                print(f"{answer} is the correct number")
+
+                print(f"{name} you won the game.")
+
+                break
+
+            elif user_input>answer:
+
+                print("try guessing the lower number")
+
+                print(f"you have {guesses-1} chances left")
+
+                guesses-=1
+
+            elif user_input<answer:
+
+                print('try guessing a higher number')
+
+                print(f"you have {guesses-1} cuances left")
+
+                guesses-=1
+
+            else:
+
+                print(f"{name} you lost the game ")
+
+                print(f"The answer is {answer}")
+
+                print("please try again\n")
+
+        
+
+        print("enter any number to exit or any alphabet to continue")
+
+        exit=input("> ")
+
+        if exit.isnumeric():
+
+            break
+
+      
+
+guess_number(4)     
+
+#print(name,"You win the game")
+
