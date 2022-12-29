@@ -68,9 +68,3 @@ def guess_number(x:int):
 
             break
 
-      
-
-guess_number(4)     
-
-#print(name,"You win the game")
-
