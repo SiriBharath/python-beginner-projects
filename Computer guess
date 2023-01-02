@@ -1,0 +1,29 @@
+import random
+
+def computer_guess(x):
+    low=1
+    high=x
+    
+    while True:
+       computer=random.randint(low,high)
+       print(f'computer guess is {computer}')
+       print('enter h for high l for low and c for correct')
+       user_feedback=input("> ")
+       if user_feedback=='h':
+           
+           high=computer-1
+           #print("now the upper limit is",high)
+       elif user_feedback=="l":
+           low=computer+1
+          # print("now the lower limit is",low)
+       elif user_feedback=="c":
+           print('yay the computer guessed your number')
+           break
+       else:
+           print("Please choose the cotrect option")
+           print("try again")
+            
+            
+
+            
+
