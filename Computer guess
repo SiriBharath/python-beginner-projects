@@ -22,6 +22,9 @@ def computer_guess(x):
        else:
            print("Please choose the cotrect option")
            print("try again")
+      exit=input("Enter any Alphabet to exit or any number to continue: ")
+      if exit.isalpha():
+          break
             
             
 
